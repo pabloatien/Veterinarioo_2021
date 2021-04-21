@@ -61,7 +61,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(767, 572);
+            this.tabControl1.Size = new System.Drawing.Size(585, 582);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -71,7 +71,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(759, 529);
+            this.tabPage1.Size = new System.Drawing.Size(577, 539);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pagina 1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -104,7 +104,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 39);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(759, 529);
+            this.tabPage3.Size = new System.Drawing.Size(577, 539);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "el tercero";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -117,6 +117,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -192,7 +193,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(46, 33);
+            this.dateTimePicker1.Location = new System.Drawing.Point(92, 41);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(414, 20);
             this.dateTimePicker1.TabIndex = 0;
@@ -225,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 572);
+            this.ClientSize = new System.Drawing.Size(585, 582);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
