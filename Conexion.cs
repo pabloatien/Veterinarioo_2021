@@ -20,7 +20,10 @@ namespace EjemploTabs_2021
             try {
                 conexion.Open();
                 
-                MySqlCommand consulta = new MySqlCommand("SELECT * FROM usuario WHERE DNI='"+ _DNI +"' AND password='"+_password+"'", conexion);
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM usuario WHERE DNI='@_DNI' AND password='@_password'", conexion);
+                consulta.Parameters.AddWithValue("@_DNI", _DNI);
+                consulta.Parameters.AddWithValue("@_password", _password);
+
                 MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la query
                 if (resultado.Read())
                 {
