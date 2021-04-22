@@ -22,5 +22,11 @@ namespace EjemploTabs_2021
             //esta parte es del tio sin gorro
 
         }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();  //cierra la aplicación
+        }
+
     }
 }

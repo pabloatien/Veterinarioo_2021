@@ -6,25 +6,30 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;  //la libreria de MySql
 using System.Data;  //la libreria del DataTable
 
-namespace PruebaBBDD
+namespace EjemploTabs_2021
 {
     class Conexion
     {
         public MySqlConnection conexion; //variable que se encarga de conectarnos al servidor MySql
 
         public Conexion() { //el constructor de la clase
-            conexion = new MySqlConnection("Server=127.0.0.1; Database=listapokemons; Uid=root; Pwd=; Port=3306 ");
+            conexion = new MySqlConnection("Server=127.0.0.1; Database=test; Uid=root; Pwd=; Port=3306 ");
         }
 
-        public DataTable getPokemons() {
+        public Boolean loginInicial(String _DNI, String _password) {
             try {
                 conexion.Open();
-                MySqlCommand consulta = new MySqlCommand("SELECT * FROM pokemon", conexion);
+                
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM usuario WHERE DNI='"+ _DNI +"' AND password='"+_password+"'", conexion);
                 MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la query
-                DataTable pokemons = new DataTable(); //formato que espera el datagridview
-                pokemons.Load(resultado);  //convierte MysqlDataReader en DataTable
+                if (resultado.Read())
+                {
+                    conexion.Close();
+                    //si entra aquí es porque sí que estan bien el usuario y la contraseña
+                    return true;
+                }
                 conexion.Close();
-                return pokemons;
+                return false;
             }
             catch (MySqlException e) {
                 throw e;
@@ -32,23 +37,5 @@ namespace PruebaBBDD
 
         }
 
-        public DataTable getPokemonPorId(int _id)
-        {
-            try
-            {
-                conexion.Open();
-                MySqlCommand consulta = new MySqlCommand("SELECT * FROM pokemon WHERE id='" + _id + "'",  conexion);
-                MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la query
-                DataTable pokemons = new DataTable(); //formato que espera el datagridview
-                pokemons.Load(resultado);  //convierte MysqlDataReader en DataTable
-                conexion.Close();
-                return pokemons;
-            }
-            catch (MySqlException e)
-            {
-                throw e;
-            }
-
-        }
     }
 }
