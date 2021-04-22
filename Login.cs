@@ -20,18 +20,22 @@ namespace EjemploTabs_2021
 
         private void botonLogin_Click(object sender, EventArgs e)
         {
-            String DNI = usuario.Text; //leo lo que el usuario ha escrito en las cajas
-            String password = pass.Text;
-            if (miConexion.loginInicial(DNI, password))
-            {
-                this.Hide();
-                Form1 ventana = new Form1();
-                ventana.Show();
-                
-            }
-            else {  //o la contraseña o el usuario son incorrectos
-                MessageBox.Show("EL USUARIO O LA CONTRASEÑA SON INCORRECTOS");
-            }
+            this.Hide();
+            Form1 ventana = new Form1();
+            ventana.Show();
+
+            //string dni = usuario.text; //leo lo que el usuario ha escrito en las cajas
+            //string password = pass.text;
+            //if (miconexion.logininicial(dni, password))
+            //{
+            //    this.hide();
+            //    form1 ventana = new form1();
+            //    ventana.show();
+
+            //}
+            //else {  //o la contraseña o el usuario son incorrectos
+            //    messagebox.show("el usuario o la contraseña son incorrectos");
+            //}
         }
     }
 }

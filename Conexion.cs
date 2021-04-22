@@ -40,5 +40,36 @@ namespace EjemploTabs_2021
 
         }
 
+        public Boolean insertausuario(String _DNI, String _Nombre, String _Apellido, String _email, String _password)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("INSERT INTO usuario (DNI, Nombre, Apellido, password, email, perfil)  VALUES (@_DNI, @_Nombre, @_Apellido, @_password, @_email, 0)", conexion);
+                consulta.Parameters.AddWithValue("@_DNI", _DNI);
+                consulta.Parameters.AddWithValue("@_Nombre", _Nombre);
+                consulta.Parameters.AddWithValue("@_Apellido", _Apellido);
+                consulta.Parameters.AddWithValue("@_email", _email);
+                consulta.Parameters.AddWithValue("@_password", _password);
+
+                int resultado = consulta.ExecuteNonQuery(); //Ejecuta el insert
+                if (resultado > 0)
+                {
+                    conexion.Close();
+                    //si entra aquí es porque ha hecho bien la inserción
+                    return true;
+                }
+                conexion.Close();
+                return false;
+            }
+            catch (MySqlException e)
+            {
+                return false;
+                throw e;
+            }
+
+        }
+
+
     }
 }

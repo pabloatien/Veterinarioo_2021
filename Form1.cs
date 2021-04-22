@@ -19,7 +19,8 @@ namespace EjemploTabs_2021
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //esta parte es del tio sin gorro
+            AltaUsuario ventana = new AltaUsuario();
+            ventana.Show();
 
         }
 

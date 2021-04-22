@@ -33,7 +33,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,8 +42,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -90,32 +90,18 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(759, 529);
+            this.tabPage2.Size = new System.Drawing.Size(577, 539);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "La otra página";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.BackgroundImage = global::EjemploTabs_2021.Properties.Resources.interface_splash_current;
-            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
-            this.tabPage3.ImageIndex = 2;
-            this.tabPage3.Location = new System.Drawing.Point(4, 39);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(577, 539);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "el tercero";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(125, 125);
+            this.button1.Location = new System.Drawing.Point(8, 43);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(257, 186);
+            this.button1.Size = new System.Drawing.Size(563, 86);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "USUARIO NUEVO";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -191,13 +177,6 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "label8";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(92, 41);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(414, 20);
-            this.dateTimePicker1.TabIndex = 0;
-            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -221,6 +200,27 @@
             this.imageList1.Images.SetKeyName(16, "icons8_user_1.ico");
             this.imageList1.Images.SetKeyName(17, "icons8_veterinarian.ico");
             this.imageList1.Images.SetKeyName(18, "icons8_whatsapp.ico");
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackgroundImage = global::EjemploTabs_2021.Properties.Resources.interface_splash_current;
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage3.Controls.Add(this.dateTimePicker1);
+            this.tabPage3.ImageIndex = 2;
+            this.tabPage3.Location = new System.Drawing.Point(4, 39);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(577, 539);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "el tercero";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(92, 41);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(414, 20);
+            this.dateTimePicker1.TabIndex = 0;
             // 
             // Form1
             // 
