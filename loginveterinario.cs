@@ -10,25 +10,24 @@ using System.Windows.Forms;
 
 namespace EjemploTabs_2021
 {
-    public partial class Login : Form
+    public partial class loginveterinario : Form
     {
         Conexion miConexion = new Conexion();
-        public Login()
+        public loginveterinario()
         {
             InitializeComponent();
         }
 
-        private void botonLogin_Click(object sender, EventArgs e)
+        private void Comprobar_Click(object sender, EventArgs e)
         {
             
-
             string dni = usuario.Text; //leo lo que el usuario ha escrito en las cajas
             string password = pass.Text;
-            if (miConexion.loginInicial(dni, password))
+            if (miConexion.loginVeterinario(dni, password))
             {
-               this.Hide();
-               tusAnimales Ventana = new tusAnimales();
-               Ventana.Show();
+                this.Hide();
+               Form1 Ventana = new Form1();
+                Ventana.Show();
 
             }
             else {  //o la contraseña o el usuario son incorrectos

@@ -32,13 +32,15 @@
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textNumcuenta = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxPASS = new System.Windows.Forms.TextBox();
+            this.textBoxContraseña = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxDNI = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.textBoxTelefono = new System.Windows.Forms.TextBox();
+            this.Telefono = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -73,28 +75,28 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Apellidos";
             // 
-            // textBoxEmail
+            // textNumcuenta
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(121, 150);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(667, 20);
-            this.textBoxEmail.TabIndex = 5;
+            this.textNumcuenta.Location = new System.Drawing.Point(121, 150);
+            this.textNumcuenta.Name = "textNumcuenta";
+            this.textNumcuenta.Size = new System.Drawing.Size(667, 20);
+            this.textNumcuenta.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(49, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Email";
+            this.label3.Text = "el dinerito";
             // 
-            // textBoxPASS
+            // textBoxContraseña
             // 
-            this.textBoxPASS.Location = new System.Drawing.Point(121, 197);
-            this.textBoxPASS.Name = "textBoxPASS";
-            this.textBoxPASS.Size = new System.Drawing.Size(667, 20);
-            this.textBoxPASS.TabIndex = 7;
+            this.textBoxContraseña.Location = new System.Drawing.Point(121, 197);
+            this.textBoxContraseña.Name = "textBoxContraseña";
+            this.textBoxContraseña.Size = new System.Drawing.Size(667, 20);
+            this.textBoxContraseña.TabIndex = 7;
             // 
             // label4
             // 
@@ -132,17 +134,35 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "DNI";
             // 
+            // textBoxTelefono
+            // 
+            this.textBoxTelefono.Location = new System.Drawing.Point(121, 240);
+            this.textBoxTelefono.Name = "textBoxTelefono";
+            this.textBoxTelefono.Size = new System.Drawing.Size(667, 20);
+            this.textBoxTelefono.TabIndex = 12;
+            // 
+            // Telefono
+            // 
+            this.Telefono.AutoSize = true;
+            this.Telefono.Location = new System.Drawing.Point(49, 247);
+            this.Telefono.Name = "Telefono";
+            this.Telefono.Size = new System.Drawing.Size(49, 13);
+            this.Telefono.TabIndex = 11;
+            this.Telefono.Text = "Teléfono";
+            // 
             // AltaUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 450);
+            this.Controls.Add(this.textBoxTelefono);
+            this.Controls.Add(this.Telefono);
             this.Controls.Add(this.textBoxDNI);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBoxPASS);
+            this.Controls.Add(this.textBoxContraseña);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textNumcuenta);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxApellido);
             this.Controls.Add(this.label2);
@@ -161,12 +181,14 @@
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxApellido;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textNumcuenta;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxPASS;
+        private System.Windows.Forms.TextBox textBoxContraseña;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxDNI;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxTelefono;
+        private System.Windows.Forms.Label Telefono;
     }
 }
