@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net, Version=0.1.5073.29922, Culture=neutral, PublicKeyToken=6bcd409ee6bc9292, processorArchitecture=MSIL">
+      <HintPath>packages\BCrypt-Official.0.1.109\lib\BCrypt.Net.dll</HintPath>
+    </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
@@ -108,6 +111,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaMascotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaMascotas.Designer.cs">
+      <DependentUpon>AltaMascotas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +137,9 @@
     <Compile Include="tusAnimales.Designer.cs">
       <DependentUpon>tusAnimales.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AltaMascotas.resx">
+      <DependentUpon>AltaMascotas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AltaUsuario.resx">
       <DependentUpon>AltaUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +184,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\interface_splash_current.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt" />
+    <None Include="Resources\usuario1.png" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\images %281%29.png" />
+    <None Include="Resources\Scorpion_Photograph_By_Shantanu_Kuveskar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

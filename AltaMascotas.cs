@@ -8,33 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-using BCrypt.Net;
-
 namespace EjemploTabs_2021
 {
-    public partial class AltaUsuario : Form
+    public partial class AltaMascotas : Form
     {
-        public AltaUsuario()
+        public AltaMascotas()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Insertar_Click(object sender, EventArgs e)
         {
-            String passhasheada = BCrypt.Net.BCrypt.HashPassword(textBoxContraseña.Text, BCrypt.Net.BCrypt.GenerateSalt());
-            MessageBox.Show(textBoxContraseña.Text + "  " + passhasheada);
             Conexion miConexion = new Conexion();
-            Boolean resultado = miConexion.insertausuario(textBoxApellido.Text, passhasheada, textBoxDNI.Text, textBoxNombre.Text, textNumcuenta.Text, textBoxTelefono.Text);
+            Boolean resultado = miConexion.insertaMascota(textBoxChip.Text,  textNombreMAS.Text,  textBoxEspecie.Text, textBoxRaza.Text, textBoxDNIDueño.Text);
             if (resultado)
             {
                 MessageBox.Show("INSERTADO CORRECTAMENTE");
             }
-            else {
+            else
+            {
                 MessageBox.Show("Ha ocurrido un error inesperado y no se ha podido insertar. Pruebe mas tarde");
             }
         }
-
-       
     }
 }

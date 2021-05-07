@@ -16,5 +16,7 @@ namespace EjemploTabs_2021
         {
             InitializeComponent();
         }
+
+        
     }
 }

@@ -32,22 +32,36 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.mascotaNueva = new System.Windows.Forms.Button();
+            this.usuarioNuevo = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.textBoxCod_Ingreso = new System.Windows.Forms.TextBox();
+            this.textBoxEnfermedad = new System.Windows.Forms.TextBox();
+            this.textBoxChip = new System.Windows.Forms.TextBox();
+            this.checkBoxVacunas = new System.Windows.Forms.CheckBox();
+            this.checkBoxEsterilizado = new System.Windows.Forms.CheckBox();
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.textBoxDescripcion = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
+            this.textBoxCoste = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +80,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.mascotaNueva);
+            this.tabPage1.Controls.Add(this.usuarioNuevo);
             this.tabPage1.ImageIndex = 13;
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Name = "tabPage1";
@@ -76,16 +91,46 @@
             this.tabPage1.Text = "Pagina 1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // mascotaNueva
+            // 
+            this.mascotaNueva.Location = new System.Drawing.Point(8, 135);
+            this.mascotaNueva.Name = "mascotaNueva";
+            this.mascotaNueva.Size = new System.Drawing.Size(563, 86);
+            this.mascotaNueva.TabIndex = 1;
+            this.mascotaNueva.Text = "MASCOTA NUEVO";
+            this.mascotaNueva.UseVisualStyleBackColor = true;
+            this.mascotaNueva.Click += new System.EventHandler(this.mascotaNueva_Click);
+            // 
+            // usuarioNuevo
+            // 
+            this.usuarioNuevo.Location = new System.Drawing.Point(8, 43);
+            this.usuarioNuevo.Name = "usuarioNuevo";
+            this.usuarioNuevo.Size = new System.Drawing.Size(563, 86);
+            this.usuarioNuevo.TabIndex = 0;
+            this.usuarioNuevo.Text = "USUARIO NUEVO";
+            this.usuarioNuevo.UseVisualStyleBackColor = true;
+            this.usuarioNuevo.Click += new System.EventHandler(this.button1_Click);
+            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.textBoxCoste);
             this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.textBoxDescripcion);
+            this.tabPage2.Controls.Add(this.dateTimePicker2);
+            this.tabPage2.Controls.Add(this.checkBoxEsterilizado);
+            this.tabPage2.Controls.Add(this.checkBoxVacunas);
+            this.tabPage2.Controls.Add(this.textBoxChip);
+            this.tabPage2.Controls.Add(this.textBoxEnfermedad);
+            this.tabPage2.Controls.Add(this.textBoxCod_Ingreso);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.ImageIndex = 4;
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Name = "tabPage2";
@@ -95,87 +140,66 @@
             this.tabPage2.Text = "La otra página";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // label3
             // 
-            this.button1.Location = new System.Drawing.Point(8, 43);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(563, 86);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "USUARIO NUEVO";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(77, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label3.BackColor = System.Drawing.Color.PowderBlue;
+            this.label3.Location = new System.Drawing.Point(25, 157);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 23);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Enfermedad";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 103);
+            this.label2.BackColor = System.Drawing.Color.PowderBlue;
+            this.label2.Location = new System.Drawing.Point(25, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Fecha";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(72, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label1.BackColor = System.Drawing.Color.PowderBlue;
+            this.label1.Location = new System.Drawing.Point(25, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Código de ingreso";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // pictureBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(80, 119);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.pictureBox1.Image = global::EjemploTabs_2021.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(581, 531);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // label5
+            // tabPage3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(88, 127);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.tabPage3.BackgroundImage = global::EjemploTabs_2021.Properties.Resources.interface_splash_current;
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage3.Controls.Add(this.dateTimePicker1);
+            this.tabPage3.ImageIndex = 2;
+            this.tabPage3.Location = new System.Drawing.Point(4, 39);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(577, 539);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "el tercero";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // dateTimePicker1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(96, 135);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(104, 143);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(112, 151);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "label8";
+            this.dateTimePicker1.Location = new System.Drawing.Point(92, 41);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(414, 20);
+            this.dateTimePicker1.TabIndex = 0;
             // 
             // imageList1
             // 
@@ -201,26 +225,132 @@
             this.imageList1.Images.SetKeyName(17, "icons8_veterinarian.ico");
             this.imageList1.Images.SetKeyName(18, "icons8_whatsapp.ico");
             // 
-            // tabPage3
+            // label4
             // 
-            this.tabPage3.BackgroundImage = global::EjemploTabs_2021.Properties.Resources.interface_splash_current;
-            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
-            this.tabPage3.ImageIndex = 2;
-            this.tabPage3.Location = new System.Drawing.Point(4, 39);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(577, 539);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "el tercero";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.label4.BackColor = System.Drawing.Color.PowderBlue;
+            this.label4.Location = new System.Drawing.Point(295, 157);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 23);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Esterilizado";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // label5
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(92, 41);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(414, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.label5.BackColor = System.Drawing.Color.PowderBlue;
+            this.label5.Location = new System.Drawing.Point(295, 100);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 23);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Vacunas";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.PowderBlue;
+            this.label6.Location = new System.Drawing.Point(295, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 23);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Chip";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.PowderBlue;
+            this.label7.Location = new System.Drawing.Point(25, 249);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 23);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Motivo de ingreso";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxCod_Ingreso
+            // 
+            this.textBoxCod_Ingreso.Location = new System.Drawing.Point(130, 45);
+            this.textBoxCod_Ingreso.Name = "textBoxCod_Ingreso";
+            this.textBoxCod_Ingreso.Size = new System.Drawing.Size(146, 20);
+            this.textBoxCod_Ingreso.TabIndex = 8;
+            // 
+            // textBoxEnfermedad
+            // 
+            this.textBoxEnfermedad.Location = new System.Drawing.Point(129, 157);
+            this.textBoxEnfermedad.Name = "textBoxEnfermedad";
+            this.textBoxEnfermedad.Size = new System.Drawing.Size(146, 20);
+            this.textBoxEnfermedad.TabIndex = 10;
+            // 
+            // textBoxChip
+            // 
+            this.textBoxChip.Location = new System.Drawing.Point(399, 45);
+            this.textBoxChip.Name = "textBoxChip";
+            this.textBoxChip.Size = new System.Drawing.Size(146, 20);
+            this.textBoxChip.TabIndex = 11;
+            // 
+            // checkBoxVacunas
+            // 
+            this.checkBoxVacunas.AutoSize = true;
+            this.checkBoxVacunas.Location = new System.Drawing.Point(411, 105);
+            this.checkBoxVacunas.Name = "checkBoxVacunas";
+            this.checkBoxVacunas.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxVacunas.TabIndex = 12;
+            this.checkBoxVacunas.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEsterilizado
+            // 
+            this.checkBoxEsterilizado.AutoSize = true;
+            this.checkBoxEsterilizado.Location = new System.Drawing.Point(411, 162);
+            this.checkBoxEsterilizado.Name = "checkBoxEsterilizado";
+            this.checkBoxEsterilizado.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxEsterilizado.TabIndex = 13;
+            this.checkBoxEsterilizado.UseVisualStyleBackColor = true;
+            // 
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(130, 99);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(145, 20);
+            this.dateTimePicker2.TabIndex = 14;
+            // 
+            // textBoxDescripcion
+            // 
+            this.textBoxDescripcion.Location = new System.Drawing.Point(129, 251);
+            this.textBoxDescripcion.Name = "textBoxDescripcion";
+            this.textBoxDescripcion.Size = new System.Drawing.Size(416, 20);
+            this.textBoxDescripcion.TabIndex = 15;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(169, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(279, 128);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // textBoxCoste
+            // 
+            this.textBoxCoste.Location = new System.Drawing.Point(129, 208);
+            this.textBoxCoste.Name = "textBoxCoste";
+            this.textBoxCoste.Size = new System.Drawing.Size(146, 20);
+            this.textBoxCoste.TabIndex = 18;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.PowderBlue;
+            this.label8.Location = new System.Drawing.Point(25, 208);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(98, 23);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Coste";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -236,6 +366,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -246,18 +377,31 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button usuarioNuevo;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button mascotaNueva;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox checkBoxEsterilizado;
+        private System.Windows.Forms.CheckBox checkBoxVacunas;
+        private System.Windows.Forms.TextBox textBoxChip;
+        private System.Windows.Forms.TextBox textBoxEnfermedad;
+        private System.Windows.Forms.TextBox textBoxCod_Ingreso;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox textBoxDescripcion;
+        private System.Windows.Forms.TextBox textBoxCoste;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
+        private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
     }
 }
 
