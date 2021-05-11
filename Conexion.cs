@@ -28,7 +28,7 @@ namespace EjemploTabs_2021
                 if (resultado.Read())
                 {
                     String passwordConHash = resultado.GetString("Contraseña");
-                    if (BCrypt.Net.BCrypt.Verify(_password, passwordConHash))
+                    //if (BCrypt.Net.BCrypt.Verify(_password, passwordConHash))
                     {
                         conexion.Close();
                         //si entra aquí es porque sí que estan bien el usuario y la contraseña
