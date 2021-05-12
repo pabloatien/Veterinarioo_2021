@@ -41,7 +41,7 @@ namespace EjemploTabs_2021
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.CausesValidation = false;
             this.label1.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(641, 120);
+            this.label1.Location = new System.Drawing.Point(606, 120);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(381, 309);
@@ -52,10 +52,10 @@ namespace EjemploTabs_2021
             // pictureBox1
             // 
             this.pictureBox1.Image = global::EjemploTabs_2021.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1033, 619);
+            this.pictureBox1.Size = new System.Drawing.Size(1041, 624);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

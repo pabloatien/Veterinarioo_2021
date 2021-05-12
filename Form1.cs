@@ -81,6 +81,12 @@ namespace EjemploTabs_2021
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AltaVeterinario ventana = new AltaVeterinario();
+            ventana.Show();
+        }
     }
-}
+    }
 

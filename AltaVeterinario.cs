@@ -10,17 +10,19 @@ using System.Windows.Forms;
 
 namespace EjemploTabs_2021
 {
-    public partial class AltaMascotas : Form
+    public partial class AltaVeterinario : Form
     {
-        public AltaMascotas()
+        public AltaVeterinario()
         {
             InitializeComponent();
         }
 
-        private void Insertar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            String passhasheada = BCrypt.Net.BCrypt.HashPassword(textBoxContraseñaVet.Text, BCrypt.Net.BCrypt.GenerateSalt());
+            MessageBox.Show(textBoxContraseñaVet.Text + "  " + passhasheada);
             Conexion miConexion = new Conexion();
-            Boolean resultado = miConexion.insertaMascota(textBoxChip.Text,  textNombreMAS.Text,  textBoxEspecie.Text, textBoxRaza.Text, textBoxAmo.Text);
+            Boolean resultado = miConexion.insertaVeterinario(textBoxDNIVet.Text, textBoxNombreVet.Text, textBoxApellidosVet.Text,  textBoxEspecialidad.Text,  textBoxPacientes.Text, passhasheada);
             if (resultado)
             {
                 MessageBox.Show("INSERTADO CORRECTAMENTE");

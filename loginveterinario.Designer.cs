@@ -62,7 +62,7 @@ namespace EjemploTabs_2021
             // 
             this.usuario.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usuario.Location = new System.Drawing.Point(13, 108);
-            this.usuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usuario.Margin = new System.Windows.Forms.Padding(4);
             this.usuario.Name = "usuario";
             this.usuario.Size = new System.Drawing.Size(419, 31);
             this.usuario.TabIndex = 2;
@@ -71,8 +71,9 @@ namespace EjemploTabs_2021
             // 
             this.pass.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pass.Location = new System.Drawing.Point(9, 249);
-            this.pass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pass.Margin = new System.Windows.Forms.Padding(4);
             this.pass.Name = "pass";
+            this.pass.PasswordChar = '*';
             this.pass.Size = new System.Drawing.Size(419, 31);
             this.pass.TabIndex = 3;
             // 
@@ -80,7 +81,7 @@ namespace EjemploTabs_2021
             // 
             this.Comprobar.Font = new System.Drawing.Font("Consolas", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Comprobar.Location = new System.Drawing.Point(115, 460);
-            this.Comprobar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Comprobar.Margin = new System.Windows.Forms.Padding(4);
             this.Comprobar.Name = "Comprobar";
             this.Comprobar.Size = new System.Drawing.Size(196, 98);
             this.Comprobar.TabIndex = 4;
@@ -98,7 +99,7 @@ namespace EjemploTabs_2021
             this.Controls.Add(this.usuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "loginveterinario";
             this.Text = "loginveterinario";
             this.ResumeLayout(false);

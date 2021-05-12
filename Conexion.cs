@@ -102,19 +102,19 @@ namespace EjemploTabs_2021
             }
 
         }
-        public Boolean insertaMascota(String _Chip, String _Nombre, String _Especie, String _Raza, String _DNI_Dueño)
+        public Boolean insertaMascota(String _Chip, String _Nombre, String _Especie, String _Raza, String _Amo)
         {
             try
             {
                 conexion.Open();
-                MySqlCommand consulta2 = new MySqlCommand ("INSERT INTO paciente (Chip, Nombre, Especie,Raza, DNI_Dueño )VALUES(@_Chip,@_Nombre,@_Especie,@_Raza,@_DNI_Dueño)", conexion);
+                MySqlCommand consulta2 = new MySqlCommand ("INSERT INTO paciente (Chip, Nombre, Especie,Raza, Amo )VALUES(@_Chip,@_Nombre,@_Especie,@_Raza,@_Amo)", conexion);
 
 
                 consulta2.Parameters.AddWithValue("@_Chip", _Chip);
                 consulta2.Parameters.AddWithValue("@_Nombre", _Nombre);
                 consulta2.Parameters.AddWithValue("@_Especie", _Especie);
                 consulta2.Parameters.AddWithValue("@_Raza", _Raza);
-                consulta2.Parameters.AddWithValue("@_DNI_Dueño", _DNI_Dueño);
+                consulta2.Parameters.AddWithValue("@_Amo", _Amo);
 
 
                 int resultado = consulta2.ExecuteNonQuery(); //Ejecuta el insert
@@ -134,6 +134,43 @@ namespace EjemploTabs_2021
                 throw e;
             }
         }
+
+
+        public Boolean insertaVeterinario(String  _DNI , String _Nombre, String _Apellidos, String _Especialidad, String _Pacientes, String  _Contraseña)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("INSERT INTO doctores (DNI , Nombre ,Apellidos , Especialidad, Pacientes,Contraseña)  VALUES (@_DNI , @_Nombre ,@_Apellidos , @_Especialidad, @_Pacientes,@_Contraseña)", conexion);
+
+                consulta.Parameters.AddWithValue("@_DNI", _DNI);
+                consulta.Parameters.AddWithValue("@_Nombre", _Nombre);
+                consulta.Parameters.AddWithValue("@_Apellidos", _Apellidos);
+             
+                
+                consulta.Parameters.AddWithValue("@_Especialidad", _Especialidad);
+                
+                consulta.Parameters.AddWithValue("@_Pacientes", _Pacientes);
+                consulta.Parameters.AddWithValue("@_Contraseña", _Contraseña);
+                int resultado = consulta.ExecuteNonQuery(); //Ejecuta el insert
+                if (resultado > 0)
+                {
+                    conexion.Close();
+                    //si entra aquí es porque ha hecho bien la inserción
+                    return true;
+                }
+                conexion.Close();
+                return false;
+            }
+            catch (MySqlException e)
+            {
+                return false;
+                throw e;
+            }
+
+        }
+
+
         public Boolean ingresoMascota(String _Cod_Ingreso, String _Descripcion, String _Enfermedad, String _Vacunas, String _Esterilizado,  String _Coste,  String _ChipAnimal , String _Fecha )
         {
             try

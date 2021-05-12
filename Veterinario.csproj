@@ -98,6 +98,12 @@
     <Compile Include="AltaUsuario.Designer.cs">
       <DependentUpon>AltaUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaVeterinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaVeterinario.Designer.cs">
+      <DependentUpon>AltaVeterinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AltaUsuario.resx">
       <DependentUpon>AltaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaVeterinario.resx">
+      <DependentUpon>AltaVeterinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

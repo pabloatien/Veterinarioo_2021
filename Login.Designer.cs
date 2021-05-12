@@ -40,7 +40,7 @@
             this.botonLogin.Font = new System.Drawing.Font("Consolas", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonLogin.ForeColor = System.Drawing.SystemColors.Desktop;
             this.botonLogin.Location = new System.Drawing.Point(16, 500);
-            this.botonLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.botonLogin.Margin = new System.Windows.Forms.Padding(4);
             this.botonLogin.Name = "botonLogin";
             this.botonLogin.Size = new System.Drawing.Size(404, 59);
             this.botonLogin.TabIndex = 0;
@@ -64,7 +64,7 @@
             // 
             this.usuario.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usuario.Location = new System.Drawing.Point(16, 113);
-            this.usuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usuario.Margin = new System.Windows.Forms.Padding(4);
             this.usuario.Name = "usuario";
             this.usuario.Size = new System.Drawing.Size(403, 31);
             this.usuario.TabIndex = 2;
@@ -73,8 +73,9 @@
             // 
             this.pass.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pass.Location = new System.Drawing.Point(16, 239);
-            this.pass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pass.Margin = new System.Windows.Forms.Padding(4);
             this.pass.Name = "pass";
+            this.pass.PasswordChar = '*';
             this.pass.Size = new System.Drawing.Size(403, 31);
             this.pass.TabIndex = 4;
             // 
@@ -101,7 +102,7 @@
             this.Controls.Add(this.usuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.botonLogin);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

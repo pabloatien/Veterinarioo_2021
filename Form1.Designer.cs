@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
             this.mascotaNueva = new System.Windows.Forms.Button();
             this.usuarioNuevo = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -104,6 +105,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.mascotaNueva);
             this.tabPage1.Controls.Add(this.usuarioNuevo);
             this.tabPage1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,6 +118,17 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Añadir usuario/mascota";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(11, 289);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(751, 106);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "AÑADIR VETERINARIO";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // mascotaNueva
             // 
@@ -534,7 +547,7 @@
             this.button3.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(472, 386);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(238, 61);
+            this.button3.Size = new System.Drawing.Size(238, 67);
             this.button3.TabIndex = 5;
             this.button3.Text = "Buscar dueño";
             this.button3.UseVisualStyleBackColor = true;
@@ -665,6 +678,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
