@@ -77,7 +77,6 @@ namespace EjemploTabs_2021
                 conexion.Open();
                 MySqlCommand consulta = new MySqlCommand("INSERT INTO dueño (Apellidos, Contraseña ,DNI , Nombre, Num_Cuenta, Telefono)  VALUES (@_Apellidos, @_Contraseña, @_DNI,@_Nombre, @_Num_Cuenta, @_Telefono)", conexion);
 
-
                 consulta.Parameters.AddWithValue("@_Apellidos", _Apellidos);
                 consulta.Parameters.AddWithValue("@_Contraseña", _Contraseña);
                 consulta.Parameters.AddWithValue("@_DNI", _DNI);
@@ -108,7 +107,6 @@ namespace EjemploTabs_2021
             {
                 conexion.Open();
                 MySqlCommand consulta2 = new MySqlCommand ("INSERT INTO paciente (Chip, Nombre, Especie,Raza, Amo )VALUES(@_Chip,@_Nombre,@_Especie,@_Raza,@_Amo)", conexion);
-
 
                 consulta2.Parameters.AddWithValue("@_Chip", _Chip);
                 consulta2.Parameters.AddWithValue("@_Nombre", _Nombre);
@@ -146,12 +144,10 @@ namespace EjemploTabs_2021
                 consulta.Parameters.AddWithValue("@_DNI", _DNI);
                 consulta.Parameters.AddWithValue("@_Nombre", _Nombre);
                 consulta.Parameters.AddWithValue("@_Apellidos", _Apellidos);
-             
-                
                 consulta.Parameters.AddWithValue("@_Especialidad", _Especialidad);
-                
                 consulta.Parameters.AddWithValue("@_Pacientes", _Pacientes);
                 consulta.Parameters.AddWithValue("@_Contraseña", _Contraseña);
+
                 int resultado = consulta.ExecuteNonQuery(); //Ejecuta el insert
                 if (resultado > 0)
                 {
@@ -171,25 +167,25 @@ namespace EjemploTabs_2021
         }
 
 
-        public Boolean ingresoMascota(String _Cod_Ingreso, String _Descripcion, String _Enfermedad, String _Vacunas, String _Esterilizado,  String _Coste,  String _ChipAnimal , String _Fecha )
+        public Boolean ingresoMascota(String _Cod_Ingreso, String _Descripcion, String _Enfermedad,  String _Coste, String _Fecha, String _Chip, String _Vacunas, String _Esterilizado  )
         {
             try
             {
                 conexion.Open();
-                MySqlCommand consulta3 = new MySqlCommand("INSERT INTO ingreso (Cod_Ingreso, Descripcion, Enfermedad ,Vacunas, Esterilizado, Coste_Ingreso, Chip, Fecha )VALUES(@_Cod_Ingreso, @_Descripcion, @_Enfermedad ,@_Vacunas, @_Esterilizado, @_Coste_Ingreso, @_Chip, @_Fecha)", conexion);
+                MySqlCommand consulta = new MySqlCommand("INSERT INTO ingreso (Cod_Ingreso, Descripcion, Enfermedad , Coste_Ingreso, Fecha, Chip, Vacunas, Esterilizado)VALUES(@_Cod_Ingreso, @_Descripcion, @_Enfermedad , @_Coste_Ingreso, @_Fecha, @_Chip, @_Vacunas, @_Esterilizado)", conexion);
 
 
-                consulta3.Parameters.AddWithValue("@_Cod_Ingreso", _Cod_Ingreso);
-                consulta3.Parameters.AddWithValue("@_Descripcion", _Descripcion);
-                consulta3.Parameters.AddWithValue("@_Enfermedad", _Enfermedad);
-                consulta3.Parameters.AddWithValue("@_Vacunas", _Vacunas);
-                consulta3.Parameters.AddWithValue("@_Esterilizado", _Esterilizado);
-                consulta3.Parameters.AddWithValue("@_Coste", _Coste);
-                consulta3.Parameters.AddWithValue("@_ChipAnimal", _ChipAnimal);
-                consulta3.Parameters.AddWithValue("@_Fecha", _Fecha);
+                consulta.Parameters.AddWithValue("@_Cod_Ingreso", _Cod_Ingreso);
+                consulta.Parameters.AddWithValue("@_Descripcion", _Descripcion);
+                consulta.Parameters.AddWithValue("@_Enfermedad", _Enfermedad);
+                consulta.Parameters.AddWithValue("@_Coste", _Coste);
+                consulta.Parameters.AddWithValue("@_Fecha", _Fecha);
+                consulta.Parameters.AddWithValue("@_Chip", _Chip);
+                consulta.Parameters.AddWithValue("@_Vacunas", _Vacunas);
+                consulta.Parameters.AddWithValue("@_Esterilizado", _Esterilizado);
 
 
-                int resultado = consulta3.ExecuteNonQuery(); //Ejecuta el insert
+                int resultado = consulta.ExecuteNonQuery(); //Ejecuta el insert
                 if (resultado > 0)
                 {
                     conexion.Close();
@@ -203,6 +199,51 @@ namespace EjemploTabs_2021
             catch (MySqlException e)
             {
                 return false;
+                throw e;
+            }
+        }
+
+
+
+
+
+
+
+        
+
+        public DataTable cogerMascota(String _Chip)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM paciente WHERE Chip='" + _Chip + "'", conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la consulta (Query)
+                DataTable veterinario = new DataTable(); //formato que espera el datagridview
+                veterinario.Load(resultado); //Convierte MySqlDataReader en DataTable
+                conexion.Close();
+                return veterinario;
+            }
+            catch (MySqlException e)
+            {
+                throw e;
+            }
+        }
+
+
+        public DataTable cogerNombre(String _DNI)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM dueño WHERE DNI='" + _DNI + "'", conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la consulta (Query)
+                DataTable veterinario = new DataTable(); //formato que espera el datagridview
+                veterinario.Load(resultado); //Convierte MySqlDataReader en DataTable
+                conexion.Close();
+                return veterinario;
+            }
+            catch (MySqlException e)
+            {
                 throw e;
             }
         }

@@ -75,7 +75,7 @@
             this.pass.Location = new System.Drawing.Point(16, 239);
             this.pass.Margin = new System.Windows.Forms.Padding(4);
             this.pass.Name = "pass";
-            this.pass.PasswordChar = '*';
+            this.pass.PasswordChar = '•';
             this.pass.Size = new System.Drawing.Size(403, 31);
             this.pass.TabIndex = 4;
             // 

@@ -12,6 +12,10 @@ namespace EjemploTabs_2021
 {
     public partial class Form1 : Form
     {
+        Conexion miConexion = new Conexion(); //esta variable es del tipo que hemos creado para conectarnos a la BBDD MySql
+        String _Chip = "";
+        String _DNI = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -36,37 +40,17 @@ namespace EjemploTabs_2021
         }
 
 
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             Conexion miConexion = new Conexion();
-            String fecha = dateTimePicker2.Text;
-            String Vacunas = "";
-            String Esterilizado = "";
-
-            if (checkBoxVacunas.ThreeState)
-            {
-
-                checkBoxVacunas.ThreeState = true;
-                Vacunas = "Si";
-            }
-            else
-            {
-                Vacunas = "No";
-            }
-            if (checkBoxEsterilizado.ThreeState)
-            {
-
-                checkBoxEsterilizado.ThreeState = true;
-                Esterilizado = "Si";
-            }
-            else
-            {
-                Esterilizado = "No";
-            }
-          
+            //String Fecha = "" + dateTimePicker2.Text;
+            String Fecha = "3";
+            String Vacunas = "Sí";
+            String Esterilizado = "Sí";
 
 
-            Boolean resultado = miConexion.ingresoMascota(textBoxCod_Ingreso.Text, textBoxDescripcion.Text, textBoxEnfermedad.Text, Vacunas, Esterilizado, textBoxCoste.Text, textBoxChip.Text, fecha);
+            Boolean resultado = miConexion.ingresoMascota(textBoxCod_Ingreso.Text, textBoxDescripcion.Text, textBoxEnfermedad.Text, textBoxCoste.Text, textBoxChip.Text, Fecha, Vacunas, Esterilizado);
             if (resultado)
             {
                 MessageBox.Show("INSERTADO CORRECTAMENTE");
@@ -77,16 +61,39 @@ namespace EjemploTabs_2021
             }
         }
 
+
+
         private void tabPage3_Click(object sender, EventArgs e)
         {
 
         }
+
+
 
         private void button5_Click(object sender, EventArgs e)
         {
             AltaVeterinario ventana = new AltaVeterinario();
             ventana.Show();
         }
+
+            private void button2_Click(object sender, EventArgs e)
+        {
+            _Chip = "" + textBox6.Text;
+            DataTable misMascotas = miConexion.cogerMascota(_Chip);
+            misMascotas = miConexion.cogerMascota(_Chip);
+            nombreMascota.Text = misMascotas.Rows[0]["Nombre"].ToString();
+            nombreAmo.Text = misMascotas.Rows[0]["Amo"].ToString();
+            especie.Text = misMascotas.Rows[0]["Especie"].ToString();
+            raza.Text = misMascotas.Rows[0]["Raza"].ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            _DNI = "" + textBox7.Text;
+            DataTable misClientes = miConexion.cogerNombre(_DNI);
+            misClientes = miConexion.cogerNombre(_DNI);
+            nombreDueño.Text = misClientes.Rows[0]["Nombre"].ToString();
+        }
     }
-    }
+}
 

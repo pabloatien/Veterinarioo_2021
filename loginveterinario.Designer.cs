@@ -73,7 +73,7 @@ namespace EjemploTabs_2021
             this.pass.Location = new System.Drawing.Point(9, 249);
             this.pass.Margin = new System.Windows.Forms.Padding(4);
             this.pass.Name = "pass";
-            this.pass.PasswordChar = '*';
+            this.pass.PasswordChar = '•';
             this.pass.Size = new System.Drawing.Size(419, 31);
             this.pass.TabIndex = 3;
             // 

@@ -69,16 +69,21 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.nombreDueño = new System.Windows.Forms.Label();
+            this.nombreMascota = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.botonDueño = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.botonMascota = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
+            this.nombreAmo = new System.Windows.Forms.Label();
+            this.especie = new System.Windows.Forms.Label();
+            this.raza = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -493,26 +498,23 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "DNI";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(314, 124);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(129, 27);
-            this.dateTimePicker1.TabIndex = 0;
+            
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.raza);
+            this.tabPage4.Controls.Add(this.especie);
+            this.tabPage4.Controls.Add(this.nombreAmo);
+            this.tabPage4.Controls.Add(this.nombreDueño);
+            this.tabPage4.Controls.Add(this.nombreMascota);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.label17);
-            this.tabPage4.Controls.Add(this.button3);
+            this.tabPage4.Controls.Add(this.botonDueño);
             this.tabPage4.Controls.Add(this.label16);
             this.tabPage4.Controls.Add(this.textBox7);
             this.tabPage4.Controls.Add(this.textBox6);
             this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.button2);
+            this.tabPage4.Controls.Add(this.botonMascota);
             this.tabPage4.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage4.ImageIndex = 2;
             this.tabPage4.Location = new System.Drawing.Point(4, 39);
@@ -523,34 +525,52 @@
             this.tabPage4.Text = "Buscador de mascotas/ dueños";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // nombreDueño
+            // 
+            this.nombreDueño.BackColor = System.Drawing.Color.Lime;
+            this.nombreDueño.Location = new System.Drawing.Point(767, 403);
+            this.nombreDueño.Name = "nombreDueño";
+            this.nombreDueño.Size = new System.Drawing.Size(190, 32);
+            this.nombreDueño.TabIndex = 9;
+            this.nombreDueño.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // nombreMascota
+            // 
+            this.nombreMascota.BackColor = System.Drawing.Color.Lime;
+            this.nombreMascota.Location = new System.Drawing.Point(767, 110);
+            this.nombreMascota.Name = "nombreMascota";
+            this.nombreMascota.Size = new System.Drawing.Size(190, 37);
+            this.nombreMascota.TabIndex = 8;
+            this.nombreMascota.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label18
             // 
-            this.label18.Location = new System.Drawing.Point(752, 327);
+            this.label18.BackColor = System.Drawing.Color.DarkRed;
+            this.label18.Location = new System.Drawing.Point(752, 386);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(216, 186);
+            this.label18.Size = new System.Drawing.Size(216, 67);
             this.label18.TabIndex = 7;
-            this.label18.Text = "Aquí debería aparecer la información del dueño, ya sea nombre, apellidos, email, " +
-    "num teléfono, etc...";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
             // 
-            this.label17.Location = new System.Drawing.Point(755, 47);
+            this.label17.BackColor = System.Drawing.Color.Maroon;
+            this.label17.Location = new System.Drawing.Point(755, 38);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(213, 175);
+            this.label17.Size = new System.Drawing.Size(213, 237);
             this.label17.TabIndex = 6;
-            this.label17.Text = "Aquí debería aparecer el nombre de la mascota o una imagen de la misma o ambas";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button3
+            // botonDueño
             // 
-            this.button3.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(472, 386);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(238, 67);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Buscar dueño";
-            this.button3.UseVisualStyleBackColor = true;
+            this.botonDueño.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonDueño.Location = new System.Drawing.Point(472, 386);
+            this.botonDueño.Name = "botonDueño";
+            this.botonDueño.Size = new System.Drawing.Size(238, 67);
+            this.botonDueño.TabIndex = 5;
+            this.botonDueño.Text = "Buscar dueño";
+            this.botonDueño.UseVisualStyleBackColor = true;
+            this.botonDueño.Click += new System.EventHandler(this.button3_Click);
             // 
             // label16
             // 
@@ -584,15 +604,16 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "Chip de la mascota";
             // 
-            // button2
+            // botonMascota
             // 
-            this.button2.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(472, 96);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(238, 68);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Buscar mascota";
-            this.button2.UseVisualStyleBackColor = true;
+            this.botonMascota.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonMascota.Location = new System.Drawing.Point(472, 96);
+            this.botonMascota.Name = "botonMascota";
+            this.botonMascota.Size = new System.Drawing.Size(238, 68);
+            this.botonMascota.TabIndex = 0;
+            this.botonMascota.Text = "Buscar mascota";
+            this.botonMascota.UseVisualStyleBackColor = true;
+            this.botonMascota.Click += new System.EventHandler(this.button2_Click);
             // 
             // imageList1
             // 
@@ -602,6 +623,33 @@
             this.imageList1.Images.SetKeyName(1, "icons8_veterinarian.ico");
             this.imageList1.Images.SetKeyName(2, "icons8_search_1.ico");
             this.imageList1.Images.SetKeyName(3, "icons8_calendar_1.ico");
+            // 
+            // nombreAmo
+            // 
+            this.nombreAmo.BackColor = System.Drawing.Color.Lime;
+            this.nombreAmo.Location = new System.Drawing.Point(767, 175);
+            this.nombreAmo.Name = "nombreAmo";
+            this.nombreAmo.Size = new System.Drawing.Size(190, 37);
+            this.nombreAmo.TabIndex = 10;
+            this.nombreAmo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // especie
+            // 
+            this.especie.BackColor = System.Drawing.Color.Lime;
+            this.especie.Location = new System.Drawing.Point(767, 51);
+            this.especie.Name = "especie";
+            this.especie.Size = new System.Drawing.Size(190, 37);
+            this.especie.TabIndex = 11;
+            this.especie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // raza
+            // 
+            this.raza.BackColor = System.Drawing.Color.Lime;
+            this.raza.Location = new System.Drawing.Point(767, 224);
+            this.raza.Name = "raza";
+            this.raza.Size = new System.Drawing.Size(190, 37);
+            this.raza.TabIndex = 12;
+            this.raza.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -671,14 +719,19 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button botonMascota;
+        private System.Windows.Forms.Button botonDueño;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label nombreDueño;
+        private System.Windows.Forms.Label nombreMascota;
+        private System.Windows.Forms.Label nombreAmo;
+        private System.Windows.Forms.Label raza;
+        private System.Windows.Forms.Label especie;
     }
 }
 
