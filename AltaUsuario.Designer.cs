@@ -96,12 +96,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(66, 187);
+            this.label3.Location = new System.Drawing.Point(18, 188);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 17);
+            this.label3.Size = new System.Drawing.Size(136, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "el dinerito";
+            this.label3.Text = "Número de cuenta";
             // 
             // textBoxContraseña
             // 

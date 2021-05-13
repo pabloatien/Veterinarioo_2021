@@ -167,7 +167,7 @@ namespace EjemploTabs_2021
         }
 
 
-        public Boolean ingresoMascota(String _Cod_Ingreso, String _Descripcion, String _Enfermedad,  String _Coste, String _Fecha, String _Chip, String _Vacunas, String _Esterilizado  )
+        public Boolean ingresoMascota(String _Cod_Ingreso, String _Descripcion, String _Enfermedad,  String _Coste_Ingreso, String _Fecha, String _Chip, String _Vacunas, String _Esterilizado  )
         {
             try
             {
@@ -178,7 +178,7 @@ namespace EjemploTabs_2021
                 consulta.Parameters.AddWithValue("@_Cod_Ingreso", _Cod_Ingreso);
                 consulta.Parameters.AddWithValue("@_Descripcion", _Descripcion);
                 consulta.Parameters.AddWithValue("@_Enfermedad", _Enfermedad);
-                consulta.Parameters.AddWithValue("@_Coste", _Coste);
+                consulta.Parameters.AddWithValue("@_Coste_Ingreso", _Coste_Ingreso);
                 consulta.Parameters.AddWithValue("@_Fecha", _Fecha);
                 consulta.Parameters.AddWithValue("@_Chip", _Chip);
                 consulta.Parameters.AddWithValue("@_Vacunas", _Vacunas);

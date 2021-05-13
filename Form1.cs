@@ -44,20 +44,20 @@ namespace EjemploTabs_2021
         private void button1_Click_1(object sender, EventArgs e)
         {
             Conexion miConexion = new Conexion();
-            //String Fecha = "" + dateTimePicker2.Text;
-            String Fecha = "3";
-            String Vacunas = "Sí";
-            String Esterilizado = "Sí";
+
+            String Fecha = dateTimePicker2.Value.ToString("yyyy-MM-dd");
+            
 
 
-            Boolean resultado = miConexion.ingresoMascota(textBoxCod_Ingreso.Text, textBoxDescripcion.Text, textBoxEnfermedad.Text, textBoxCoste.Text, textBoxChip.Text, Fecha, Vacunas, Esterilizado);
+            Boolean resultado = miConexion.ingresoMascota(textBoxCod_Ingreso.Text, textBoxDescripcion.Text, textBoxEnfermedad.Text, textBoxCoste.Text, Fecha, textBoxChip.Text, textBoxVacunas.Text, textBoxEsterilizado.Text);
             if (resultado)
             {
                 MessageBox.Show("INSERTADO CORRECTAMENTE");
             }
             else
             {
-                MessageBox.Show("Ha ocurrido un error inesperado y no se ha podido insertar. Pruebe mas tarde");
+                //MessageBox.Show("Ha ocurrido un error inesperado y no se ha podido insertar. Pruebe mas tarde");
+                MessageBox.Show(" " + Fecha);
             }
         }
 
@@ -93,6 +93,7 @@ namespace EjemploTabs_2021
             DataTable misClientes = miConexion.cogerNombre(_DNI);
             misClientes = miConexion.cogerNombre(_DNI);
             nombreDueño.Text = misClientes.Rows[0]["Nombre"].ToString();
+            telefonoDueño.Text = misClientes.Rows[0]["Telefono"].ToString();
         }
     }
 }
