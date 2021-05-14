@@ -56,11 +56,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNum_Telefono = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxApellidos = new System.Windows.Forms.TextBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.textBoxDNI = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -193,7 +193,7 @@
             this.textBoxEsterilizado.Location = new System.Drawing.Point(548, 194);
             this.textBoxEsterilizado.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEsterilizado.Name = "textBoxEsterilizado";
-            this.textBoxEsterilizado.Size = new System.Drawing.Size(193, 27);
+            this.textBoxEsterilizado.Size = new System.Drawing.Size(177, 27);
             this.textBoxEsterilizado.TabIndex = 20;
             // 
             // textBoxVacunas
@@ -201,15 +201,15 @@
             this.textBoxVacunas.Location = new System.Drawing.Point(548, 122);
             this.textBoxVacunas.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxVacunas.Name = "textBoxVacunas";
-            this.textBoxVacunas.Size = new System.Drawing.Size(193, 27);
+            this.textBoxVacunas.Size = new System.Drawing.Size(177, 27);
             this.textBoxVacunas.TabIndex = 19;
             // 
             // textBoxCoste
             // 
-            this.textBoxCoste.Location = new System.Drawing.Point(172, 256);
+            this.textBoxCoste.Location = new System.Drawing.Point(225, 256);
             this.textBoxCoste.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCoste.Name = "textBoxCoste";
-            this.textBoxCoste.Size = new System.Drawing.Size(193, 27);
+            this.textBoxCoste.Size = new System.Drawing.Size(140, 27);
             this.textBoxCoste.TabIndex = 18;
             // 
             // label8
@@ -218,7 +218,7 @@
             this.label8.Location = new System.Drawing.Point(17, 256);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(147, 28);
+            this.label8.Size = new System.Drawing.Size(200, 28);
             this.label8.TabIndex = 17;
             this.label8.Text = "Coste";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -245,10 +245,10 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(173, 122);
+            this.dateTimePicker2.Location = new System.Drawing.Point(225, 122);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(153, 27);
+            this.dateTimePicker2.Size = new System.Drawing.Size(141, 27);
             this.dateTimePicker2.TabIndex = 14;
             // 
             // textBoxChip
@@ -261,10 +261,10 @@
             // 
             // textBoxEnfermedad
             // 
-            this.textBoxEnfermedad.Location = new System.Drawing.Point(172, 193);
+            this.textBoxEnfermedad.Location = new System.Drawing.Point(225, 193);
             this.textBoxEnfermedad.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEnfermedad.Name = "textBoxEnfermedad";
-            this.textBoxEnfermedad.Size = new System.Drawing.Size(193, 27);
+            this.textBoxEnfermedad.Size = new System.Drawing.Size(140, 27);
             this.textBoxEnfermedad.TabIndex = 10;
             // 
             // textBoxCod_Ingreso
@@ -325,7 +325,7 @@
             this.label3.Location = new System.Drawing.Point(13, 193);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 28);
+            this.label3.Size = new System.Drawing.Size(204, 28);
             this.label3.TabIndex = 3;
             this.label3.Text = "Enfermedad";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -336,7 +336,7 @@
             this.label2.Location = new System.Drawing.Point(13, 123);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 28);
+            this.label2.Size = new System.Drawing.Size(204, 28);
             this.label2.TabIndex = 2;
             this.label2.Text = "Fecha de ingreso";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -367,11 +367,11 @@
             // 
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage3.Controls.Add(this.button4);
-            this.tabPage3.Controls.Add(this.textBox5);
-            this.tabPage3.Controls.Add(this.textBox4);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.textBoxNum_Telefono);
+            this.tabPage3.Controls.Add(this.textBoxEmail);
+            this.tabPage3.Controls.Add(this.textBoxApellidos);
+            this.tabPage3.Controls.Add(this.textBoxNombre);
+            this.tabPage3.Controls.Add(this.textBoxDNI);
             this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Controls.Add(this.label15);
             this.tabPage3.Controls.Add(this.label12);
@@ -400,41 +400,42 @@
             this.button4.TabIndex = 12;
             this.button4.Text = "SOLICITAR";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox5
+            // textBoxNum_Telefono
             // 
-            this.textBox5.Location = new System.Drawing.Point(314, 418);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(129, 27);
-            this.textBox5.TabIndex = 11;
+            this.textBoxNum_Telefono.Location = new System.Drawing.Point(314, 418);
+            this.textBoxNum_Telefono.Name = "textBoxNum_Telefono";
+            this.textBoxNum_Telefono.Size = new System.Drawing.Size(129, 27);
+            this.textBoxNum_Telefono.TabIndex = 11;
             // 
-            // textBox4
+            // textBoxEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(314, 350);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(129, 27);
-            this.textBox4.TabIndex = 10;
+            this.textBoxEmail.Location = new System.Drawing.Point(314, 350);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(129, 27);
+            this.textBoxEmail.TabIndex = 10;
             // 
-            // textBox3
+            // textBoxApellidos
             // 
-            this.textBox3.Location = new System.Drawing.Point(314, 274);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(129, 27);
-            this.textBox3.TabIndex = 9;
+            this.textBoxApellidos.Location = new System.Drawing.Point(314, 274);
+            this.textBoxApellidos.Name = "textBoxApellidos";
+            this.textBoxApellidos.Size = new System.Drawing.Size(129, 27);
+            this.textBoxApellidos.TabIndex = 9;
             // 
-            // textBox2
+            // textBoxNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(314, 201);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(129, 27);
-            this.textBox2.TabIndex = 8;
+            this.textBoxNombre.Location = new System.Drawing.Point(314, 201);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(129, 27);
+            this.textBoxNombre.TabIndex = 8;
             // 
-            // textBox1
+            // textBoxDNI
             // 
-            this.textBox1.Location = new System.Drawing.Point(314, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 27);
-            this.textBox1.TabIndex = 7;
+            this.textBoxDNI.Location = new System.Drawing.Point(314, 50);
+            this.textBoxDNI.Name = "textBoxDNI";
+            this.textBoxDNI.Size = new System.Drawing.Size(129, 27);
+            this.textBoxDNI.TabIndex = 7;
             // 
             // label14
             // 
@@ -498,9 +499,10 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(314, 124);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(129, 27);
             this.dateTimePicker1.TabIndex = 13;
             // 
             // tabPage4
@@ -718,17 +720,17 @@
         private System.Windows.Forms.Button button1;
         private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxDNI;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxNum_Telefono;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxApellidos;
+        private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button botonMascota;

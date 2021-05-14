@@ -95,6 +95,26 @@ namespace EjemploTabs_2021
             nombreDueño.Text = misClientes.Rows[0]["Nombre"].ToString();
             telefonoDueño.Text = misClientes.Rows[0]["Telefono"].ToString();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Conexion miConexion = new Conexion();
+
+            String Fecha = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+
+
+
+            Boolean resultado = miConexion.pedirCita(textBoxDNI.Text, Fecha, textBoxNombre.Text, textBoxApellidos.Text, textBoxEmail.Text, textBoxNum_Telefono.Text);
+            if (resultado)
+            {
+                MessageBox.Show("INSERTADO CORRECTAMENTE");
+            }
+            else
+            {
+                //MessageBox.Show("Ha ocurrido un error inesperado y no se ha podido insertar. Pruebe mas tarde");
+                MessageBox.Show(" " + Fecha);
+            }
+        }
     }
 }
 

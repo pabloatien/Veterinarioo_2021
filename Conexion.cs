@@ -246,6 +246,41 @@ namespace EjemploTabs_2021
         }
 
 
+        public Boolean pedirCita(String _DNI, String _Fecha, String _Nombre, String _Apellidos, String _Email, String _Numero_Telefono)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("INSERT INTO cita (DNI, Fecha, Nombre , Apellidos, Email, Numero_Telefono)VALUES(@_DNI, @_Fecha, @_Nombre, @_Apellidos, @_Email, @_Numero_Telefono)", conexion);
+
+
+                consulta.Parameters.AddWithValue("@_DNI", _DNI);
+                consulta.Parameters.AddWithValue("@_Fecha", _Fecha);
+                consulta.Parameters.AddWithValue("@_Nombre", _Nombre);
+                consulta.Parameters.AddWithValue("@_Apellidos", _Apellidos);
+                consulta.Parameters.AddWithValue("@_Email", _Email);
+                consulta.Parameters.AddWithValue("@_Numero_Telefono", _Numero_Telefono);
+
+
+                int resultado = consulta.ExecuteNonQuery(); //Ejecuta el insert
+                if (resultado > 0)
+                {
+                    conexion.Close();
+                    //si entra aquí es porque ha hecho bien la inserción
+                    return true;
+                }
+                conexion.Close();
+                return false;
+
+            }
+            catch (MySqlException e)
+            {
+                return false;
+                throw e;
+            }
+        }
+
+
     }
 
 }
