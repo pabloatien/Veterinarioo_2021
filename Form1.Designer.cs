@@ -103,34 +103,32 @@
             this.tabControl1.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.ImageList = this.imageList1;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(996, 716);
+            this.tabControl1.Size = new System.Drawing.Size(747, 582);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = global::EjemploTabs_2021.Properties.Resources.fondo;
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.mascotaNueva);
             this.tabPage1.Controls.Add(this.usuarioNuevo);
             this.tabPage1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.ImageIndex = 0;
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(988, 673);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(739, 539);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Añadir usuario/mascota";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(11, 289);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(95, 292);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(751, 106);
+            this.button5.Size = new System.Drawing.Size(563, 86);
             this.button5.TabIndex = 2;
             this.button5.Text = "AÑADIR VETERINARIO";
             this.button5.UseVisualStyleBackColor = true;
@@ -138,10 +136,9 @@
             // 
             // mascotaNueva
             // 
-            this.mascotaNueva.Location = new System.Drawing.Point(11, 166);
-            this.mascotaNueva.Margin = new System.Windows.Forms.Padding(4);
+            this.mascotaNueva.Location = new System.Drawing.Point(95, 166);
             this.mascotaNueva.Name = "mascotaNueva";
-            this.mascotaNueva.Size = new System.Drawing.Size(751, 106);
+            this.mascotaNueva.Size = new System.Drawing.Size(563, 86);
             this.mascotaNueva.TabIndex = 1;
             this.mascotaNueva.Text = "AÑADIR MASCOTA";
             this.mascotaNueva.UseVisualStyleBackColor = true;
@@ -149,10 +146,9 @@
             // 
             // usuarioNuevo
             // 
-            this.usuarioNuevo.Location = new System.Drawing.Point(11, 43);
-            this.usuarioNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.usuarioNuevo.Location = new System.Drawing.Point(95, 43);
             this.usuarioNuevo.Name = "usuarioNuevo";
-            this.usuarioNuevo.Size = new System.Drawing.Size(751, 106);
+            this.usuarioNuevo.Size = new System.Drawing.Size(563, 86);
             this.usuarioNuevo.TabIndex = 0;
             this.usuarioNuevo.Text = "AÑADIR USUARIO";
             this.usuarioNuevo.UseVisualStyleBackColor = true;
@@ -180,55 +176,49 @@
             this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.ImageIndex = 1;
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(988, 673);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(739, 539);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ingreso";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // textBoxEsterilizado
             // 
-            this.textBoxEsterilizado.Location = new System.Drawing.Point(548, 194);
-            this.textBoxEsterilizado.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEsterilizado.Location = new System.Drawing.Point(411, 158);
             this.textBoxEsterilizado.Name = "textBoxEsterilizado";
-            this.textBoxEsterilizado.Size = new System.Drawing.Size(177, 27);
+            this.textBoxEsterilizado.Size = new System.Drawing.Size(134, 23);
             this.textBoxEsterilizado.TabIndex = 20;
             // 
             // textBoxVacunas
             // 
-            this.textBoxVacunas.Location = new System.Drawing.Point(548, 122);
-            this.textBoxVacunas.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxVacunas.Location = new System.Drawing.Point(411, 99);
             this.textBoxVacunas.Name = "textBoxVacunas";
-            this.textBoxVacunas.Size = new System.Drawing.Size(177, 27);
+            this.textBoxVacunas.Size = new System.Drawing.Size(134, 23);
             this.textBoxVacunas.TabIndex = 19;
             // 
             // textBoxCoste
             // 
-            this.textBoxCoste.Location = new System.Drawing.Point(225, 256);
-            this.textBoxCoste.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCoste.Location = new System.Drawing.Point(169, 208);
             this.textBoxCoste.Name = "textBoxCoste";
-            this.textBoxCoste.Size = new System.Drawing.Size(140, 27);
+            this.textBoxCoste.Size = new System.Drawing.Size(106, 23);
             this.textBoxCoste.TabIndex = 18;
             // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.PowderBlue;
-            this.label8.Location = new System.Drawing.Point(17, 256);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(13, 208);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(200, 28);
+            this.label8.Size = new System.Drawing.Size(150, 23);
             this.label8.TabIndex = 17;
             this.label8.Text = "Coste";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(225, 433);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(169, 352);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(372, 158);
+            this.button1.Size = new System.Drawing.Size(279, 128);
             this.button1.TabIndex = 16;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -236,52 +226,46 @@
             // 
             // textBoxDescripcion
             // 
-            this.textBoxDescripcion.Location = new System.Drawing.Point(225, 309);
-            this.textBoxDescripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDescripcion.Location = new System.Drawing.Point(169, 251);
             this.textBoxDescripcion.Name = "textBoxDescripcion";
-            this.textBoxDescripcion.Size = new System.Drawing.Size(500, 27);
+            this.textBoxDescripcion.Size = new System.Drawing.Size(376, 23);
             this.textBoxDescripcion.TabIndex = 15;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(225, 122);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker2.Location = new System.Drawing.Point(169, 99);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(141, 27);
+            this.dateTimePicker2.Size = new System.Drawing.Size(107, 23);
             this.dateTimePicker2.TabIndex = 14;
             // 
             // textBoxChip
             // 
-            this.textBoxChip.Location = new System.Drawing.Point(548, 55);
-            this.textBoxChip.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxChip.Location = new System.Drawing.Point(411, 45);
             this.textBoxChip.Name = "textBoxChip";
-            this.textBoxChip.Size = new System.Drawing.Size(177, 27);
+            this.textBoxChip.Size = new System.Drawing.Size(134, 23);
             this.textBoxChip.TabIndex = 11;
             // 
             // textBoxEnfermedad
             // 
-            this.textBoxEnfermedad.Location = new System.Drawing.Point(225, 193);
-            this.textBoxEnfermedad.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEnfermedad.Location = new System.Drawing.Point(169, 157);
             this.textBoxEnfermedad.Name = "textBoxEnfermedad";
-            this.textBoxEnfermedad.Size = new System.Drawing.Size(140, 27);
+            this.textBoxEnfermedad.Size = new System.Drawing.Size(106, 23);
             this.textBoxEnfermedad.TabIndex = 10;
             // 
             // textBoxCod_Ingreso
             // 
-            this.textBoxCod_Ingreso.Location = new System.Drawing.Point(225, 55);
-            this.textBoxCod_Ingreso.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCod_Ingreso.Location = new System.Drawing.Point(169, 45);
             this.textBoxCod_Ingreso.Name = "textBoxCod_Ingreso";
-            this.textBoxCod_Ingreso.Size = new System.Drawing.Size(141, 27);
+            this.textBoxCod_Ingreso.Size = new System.Drawing.Size(107, 23);
             this.textBoxCod_Ingreso.TabIndex = 8;
             // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.PowderBlue;
-            this.label7.Location = new System.Drawing.Point(13, 306);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(10, 249);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(204, 28);
+            this.label7.Size = new System.Drawing.Size(153, 23);
             this.label7.TabIndex = 7;
             this.label7.Text = "Motivo de ingreso";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,10 +273,9 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.PowderBlue;
-            this.label4.Location = new System.Drawing.Point(393, 193);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(295, 157);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 28);
+            this.label4.Size = new System.Drawing.Size(110, 23);
             this.label4.TabIndex = 6;
             this.label4.Text = "Esterilizado";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -300,10 +283,9 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.PowderBlue;
-            this.label5.Location = new System.Drawing.Point(393, 123);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(295, 100);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 28);
+            this.label5.Size = new System.Drawing.Size(110, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "Vacunas";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -311,10 +293,9 @@
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.PowderBlue;
-            this.label6.Location = new System.Drawing.Point(393, 55);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(295, 45);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 28);
+            this.label6.Size = new System.Drawing.Size(110, 23);
             this.label6.TabIndex = 4;
             this.label6.Text = "Chip";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -322,10 +303,9 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.PowderBlue;
-            this.label3.Location = new System.Drawing.Point(13, 193);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(10, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(204, 28);
+            this.label3.Size = new System.Drawing.Size(153, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Enfermedad";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -333,10 +313,9 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.PowderBlue;
-            this.label2.Location = new System.Drawing.Point(13, 123);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(10, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 28);
+            this.label2.Size = new System.Drawing.Size(153, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Fecha de ingreso";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -344,10 +323,9 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.PowderBlue;
-            this.label1.Location = new System.Drawing.Point(9, 55);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(7, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 28);
+            this.label1.Size = new System.Drawing.Size(156, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Código de ingreso";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -356,15 +334,15 @@
             // 
             this.pictureBox1.Image = global::EjemploTabs_2021.Properties.Resources.images;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(775, 654);
+            this.pictureBox1.Size = new System.Drawing.Size(739, 531);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.DarkGray;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Controls.Add(this.textBoxNum_Telefono);
@@ -382,21 +360,20 @@
             this.tabPage3.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage3.ImageIndex = 3;
             this.tabPage3.Location = new System.Drawing.Point(4, 39);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(988, 673);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(739, 539);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pedir cita";
-            this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Consolas", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(719, 124);
+            this.button4.Location = new System.Drawing.Point(531, 101);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(206, 253);
+            this.button4.Size = new System.Drawing.Size(162, 206);
             this.button4.TabIndex = 12;
             this.button4.Text = "SOLICITAR";
             this.button4.UseVisualStyleBackColor = true;
@@ -404,45 +381,51 @@
             // 
             // textBoxNum_Telefono
             // 
-            this.textBoxNum_Telefono.Location = new System.Drawing.Point(314, 418);
+            this.textBoxNum_Telefono.Location = new System.Drawing.Point(236, 340);
+            this.textBoxNum_Telefono.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNum_Telefono.Name = "textBoxNum_Telefono";
-            this.textBoxNum_Telefono.Size = new System.Drawing.Size(129, 27);
+            this.textBoxNum_Telefono.Size = new System.Drawing.Size(98, 23);
             this.textBoxNum_Telefono.TabIndex = 11;
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(314, 350);
+            this.textBoxEmail.Location = new System.Drawing.Point(236, 284);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(129, 27);
+            this.textBoxEmail.Size = new System.Drawing.Size(98, 23);
             this.textBoxEmail.TabIndex = 10;
             // 
             // textBoxApellidos
             // 
-            this.textBoxApellidos.Location = new System.Drawing.Point(314, 274);
+            this.textBoxApellidos.Location = new System.Drawing.Point(236, 223);
+            this.textBoxApellidos.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxApellidos.Name = "textBoxApellidos";
-            this.textBoxApellidos.Size = new System.Drawing.Size(129, 27);
+            this.textBoxApellidos.Size = new System.Drawing.Size(98, 23);
             this.textBoxApellidos.TabIndex = 9;
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(314, 201);
+            this.textBoxNombre.Location = new System.Drawing.Point(236, 163);
+            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(129, 27);
+            this.textBoxNombre.Size = new System.Drawing.Size(98, 23);
             this.textBoxNombre.TabIndex = 8;
             // 
             // textBoxDNI
             // 
-            this.textBoxDNI.Location = new System.Drawing.Point(314, 50);
+            this.textBoxDNI.Location = new System.Drawing.Point(236, 41);
+            this.textBoxDNI.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDNI.Name = "textBoxDNI";
-            this.textBoxDNI.Size = new System.Drawing.Size(129, 27);
+            this.textBoxDNI.Size = new System.Drawing.Size(98, 23);
             this.textBoxDNI.TabIndex = 7;
             // 
             // label14
             // 
             this.label14.BackColor = System.Drawing.Color.Aquamarine;
-            this.label14.Location = new System.Drawing.Point(105, 418);
+            this.label14.Location = new System.Drawing.Point(79, 340);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(203, 27);
+            this.label14.Size = new System.Drawing.Size(152, 22);
             this.label14.TabIndex = 6;
             this.label14.Text = "Num de teléfono";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -450,9 +433,10 @@
             // label15
             // 
             this.label15.BackColor = System.Drawing.Color.Aquamarine;
-            this.label15.Location = new System.Drawing.Point(105, 350);
+            this.label15.Location = new System.Drawing.Point(79, 284);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(203, 27);
+            this.label15.Size = new System.Drawing.Size(152, 22);
             this.label15.TabIndex = 5;
             this.label15.Text = "Email";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -460,9 +444,10 @@
             // label12
             // 
             this.label12.BackColor = System.Drawing.Color.Aquamarine;
-            this.label12.Location = new System.Drawing.Point(105, 274);
+            this.label12.Location = new System.Drawing.Point(79, 223);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(203, 27);
+            this.label12.Size = new System.Drawing.Size(152, 22);
             this.label12.TabIndex = 4;
             this.label12.Text = "Apellidos";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -470,9 +455,10 @@
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.Aquamarine;
-            this.label13.Location = new System.Drawing.Point(105, 201);
+            this.label13.Location = new System.Drawing.Point(79, 163);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(203, 27);
+            this.label13.Size = new System.Drawing.Size(152, 22);
             this.label13.TabIndex = 3;
             this.label13.Text = "Nombre";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -480,9 +466,10 @@
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.Aquamarine;
-            this.label11.Location = new System.Drawing.Point(105, 124);
+            this.label11.Location = new System.Drawing.Point(79, 101);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(202, 27);
+            this.label11.Size = new System.Drawing.Size(152, 22);
             this.label11.TabIndex = 2;
             this.label11.Text = "Fecha";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -490,9 +477,10 @@
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.Aquamarine;
-            this.label9.Location = new System.Drawing.Point(105, 50);
+            this.label9.Location = new System.Drawing.Point(79, 41);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(202, 27);
+            this.label9.Size = new System.Drawing.Size(152, 22);
             this.label9.TabIndex = 1;
             this.label9.Text = "DNI";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -500,13 +488,15 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(314, 124);
+            this.dateTimePicker1.Location = new System.Drawing.Point(236, 101);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(129, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(98, 23);
             this.dateTimePicker1.TabIndex = 13;
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.PaleGreen;
             this.tabPage4.Controls.Add(this.telefonoDueño);
             this.tabPage4.Controls.Add(this.raza);
             this.tabPage4.Controls.Add(this.especie);
@@ -524,91 +514,100 @@
             this.tabPage4.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage4.ImageIndex = 2;
             this.tabPage4.Location = new System.Drawing.Point(4, 39);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(988, 673);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Size = new System.Drawing.Size(739, 539);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Buscador de mascotas/ dueños";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // telefonoDueño
             // 
             this.telefonoDueño.BackColor = System.Drawing.Color.Lime;
-            this.telefonoDueño.Location = new System.Drawing.Point(767, 454);
+            this.telefonoDueño.Location = new System.Drawing.Point(575, 369);
+            this.telefonoDueño.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.telefonoDueño.Name = "telefonoDueño";
-            this.telefonoDueño.Size = new System.Drawing.Size(190, 32);
+            this.telefonoDueño.Size = new System.Drawing.Size(142, 26);
             this.telefonoDueño.TabIndex = 14;
             this.telefonoDueño.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // raza
             // 
             this.raza.BackColor = System.Drawing.Color.Lime;
-            this.raza.Location = new System.Drawing.Point(767, 224);
+            this.raza.Location = new System.Drawing.Point(575, 182);
+            this.raza.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.raza.Name = "raza";
-            this.raza.Size = new System.Drawing.Size(190, 37);
+            this.raza.Size = new System.Drawing.Size(142, 30);
             this.raza.TabIndex = 12;
             this.raza.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // especie
             // 
             this.especie.BackColor = System.Drawing.Color.Lime;
-            this.especie.Location = new System.Drawing.Point(767, 51);
+            this.especie.Location = new System.Drawing.Point(575, 41);
+            this.especie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.especie.Name = "especie";
-            this.especie.Size = new System.Drawing.Size(190, 37);
+            this.especie.Size = new System.Drawing.Size(142, 30);
             this.especie.TabIndex = 11;
             this.especie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nombreAmo
             // 
             this.nombreAmo.BackColor = System.Drawing.Color.Lime;
-            this.nombreAmo.Location = new System.Drawing.Point(767, 168);
+            this.nombreAmo.Location = new System.Drawing.Point(575, 136);
+            this.nombreAmo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nombreAmo.Name = "nombreAmo";
-            this.nombreAmo.Size = new System.Drawing.Size(190, 37);
+            this.nombreAmo.Size = new System.Drawing.Size(142, 30);
             this.nombreAmo.TabIndex = 10;
             this.nombreAmo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nombreDueño
             // 
             this.nombreDueño.BackColor = System.Drawing.Color.Lime;
-            this.nombreDueño.Location = new System.Drawing.Point(767, 403);
+            this.nombreDueño.Location = new System.Drawing.Point(575, 327);
+            this.nombreDueño.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nombreDueño.Name = "nombreDueño";
-            this.nombreDueño.Size = new System.Drawing.Size(190, 32);
+            this.nombreDueño.Size = new System.Drawing.Size(142, 26);
             this.nombreDueño.TabIndex = 9;
             this.nombreDueño.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nombreMascota
             // 
             this.nombreMascota.BackColor = System.Drawing.Color.Lime;
-            this.nombreMascota.Location = new System.Drawing.Point(767, 110);
+            this.nombreMascota.Location = new System.Drawing.Point(575, 89);
+            this.nombreMascota.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nombreMascota.Name = "nombreMascota";
-            this.nombreMascota.Size = new System.Drawing.Size(190, 37);
+            this.nombreMascota.Size = new System.Drawing.Size(142, 30);
             this.nombreMascota.TabIndex = 8;
             this.nombreMascota.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
             // 
             this.label18.BackColor = System.Drawing.Color.DarkRed;
-            this.label18.Location = new System.Drawing.Point(752, 386);
+            this.label18.Location = new System.Drawing.Point(564, 314);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(216, 120);
+            this.label18.Size = new System.Drawing.Size(162, 98);
             this.label18.TabIndex = 7;
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
             // 
             this.label17.BackColor = System.Drawing.Color.Maroon;
-            this.label17.Location = new System.Drawing.Point(755, 38);
+            this.label17.Location = new System.Drawing.Point(566, 31);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(213, 237);
+            this.label17.Size = new System.Drawing.Size(160, 193);
             this.label17.TabIndex = 6;
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // botonDueño
             // 
             this.botonDueño.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonDueño.Location = new System.Drawing.Point(472, 409);
+            this.botonDueño.Location = new System.Drawing.Point(354, 332);
+            this.botonDueño.Margin = new System.Windows.Forms.Padding(2);
             this.botonDueño.Name = "botonDueño";
-            this.botonDueño.Size = new System.Drawing.Size(238, 67);
+            this.botonDueño.Size = new System.Drawing.Size(178, 54);
             this.botonDueño.TabIndex = 5;
             this.botonDueño.Text = "Buscar dueño";
             this.botonDueño.UseVisualStyleBackColor = true;
@@ -617,32 +616,36 @@
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(56, 431);
+            this.label16.Location = new System.Drawing.Point(42, 350);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(200, 25);
+            this.label16.Size = new System.Drawing.Size(150, 20);
             this.label16.TabIndex = 4;
             this.label16.Text = "DNI del dueño";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(263, 433);
+            this.textBox7.Location = new System.Drawing.Point(197, 352);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(167, 23);
+            this.textBox7.Size = new System.Drawing.Size(126, 20);
             this.textBox7.TabIndex = 3;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(263, 146);
+            this.textBox6.Location = new System.Drawing.Point(197, 119);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 23);
+            this.textBox6.Size = new System.Drawing.Size(126, 20);
             this.textBox6.TabIndex = 2;
             // 
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(52, 145);
+            this.label10.Location = new System.Drawing.Point(39, 118);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(204, 25);
+            this.label10.Size = new System.Drawing.Size(153, 20);
             this.label10.TabIndex = 1;
             this.label10.Text = "Chip de la mascota";
             // 
@@ -650,9 +653,10 @@
             // 
             this.botonMascota.BackColor = System.Drawing.Color.Transparent;
             this.botonMascota.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonMascota.Location = new System.Drawing.Point(472, 118);
+            this.botonMascota.Location = new System.Drawing.Point(354, 96);
+            this.botonMascota.Margin = new System.Windows.Forms.Padding(2);
             this.botonMascota.Name = "botonMascota";
-            this.botonMascota.Size = new System.Drawing.Size(238, 68);
+            this.botonMascota.Size = new System.Drawing.Size(178, 55);
             this.botonMascota.TabIndex = 0;
             this.botonMascota.Text = "Buscar mascota";
             this.botonMascota.UseVisualStyleBackColor = false;
@@ -669,12 +673,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 716);
+            this.ClientSize = new System.Drawing.Size(747, 582);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
