@@ -79,6 +79,7 @@ namespace EjemploTabs_2021
             this.textBoxContraseñaVet.Location = new System.Drawing.Point(127, 184);
             this.textBoxContraseñaVet.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxContraseñaVet.Name = "textBoxContraseñaVet";
+            this.textBoxContraseñaVet.PasswordChar = '•';
             this.textBoxContraseñaVet.Size = new System.Drawing.Size(888, 23);
             this.textBoxContraseñaVet.TabIndex = 20;
             // 

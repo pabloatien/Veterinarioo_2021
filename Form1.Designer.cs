@@ -36,6 +36,8 @@
             this.mascotaNueva = new System.Windows.Forms.Button();
             this.usuarioNuevo = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBoxEsterilizado = new System.Windows.Forms.TextBox();
+            this.textBoxVacunas = new System.Windows.Forms.TextBox();
             this.textBoxCoste = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -67,6 +69,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.telefonoDueño = new System.Windows.Forms.Label();
             this.raza = new System.Windows.Forms.Label();
             this.especie = new System.Windows.Forms.Label();
             this.nombreAmo = new System.Windows.Forms.Label();
@@ -82,9 +85,6 @@
             this.botonMascota = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
-            this.telefonoDueño = new System.Windows.Forms.Label();
-            this.textBoxVacunas = new System.Windows.Forms.TextBox();
-            this.textBoxEsterilizado = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -149,7 +149,7 @@
             // 
             // usuarioNuevo
             // 
-            this.usuarioNuevo.Location = new System.Drawing.Point(11, 53);
+            this.usuarioNuevo.Location = new System.Drawing.Point(11, 43);
             this.usuarioNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.usuarioNuevo.Name = "usuarioNuevo";
             this.usuarioNuevo.Size = new System.Drawing.Size(751, 106);
@@ -187,6 +187,22 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ingreso";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // textBoxEsterilizado
+            // 
+            this.textBoxEsterilizado.Location = new System.Drawing.Point(548, 194);
+            this.textBoxEsterilizado.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEsterilizado.Name = "textBoxEsterilizado";
+            this.textBoxEsterilizado.Size = new System.Drawing.Size(193, 27);
+            this.textBoxEsterilizado.TabIndex = 20;
+            // 
+            // textBoxVacunas
+            // 
+            this.textBoxVacunas.Location = new System.Drawing.Point(548, 122);
+            this.textBoxVacunas.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxVacunas.Name = "textBoxVacunas";
+            this.textBoxVacunas.Size = new System.Drawing.Size(193, 27);
+            this.textBoxVacunas.TabIndex = 19;
             // 
             // textBoxCoste
             // 
@@ -513,6 +529,15 @@
             this.tabPage4.Text = "Buscador de mascotas/ dueños";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // telefonoDueño
+            // 
+            this.telefonoDueño.BackColor = System.Drawing.Color.Lime;
+            this.telefonoDueño.Location = new System.Drawing.Point(767, 454);
+            this.telefonoDueño.Name = "telefonoDueño";
+            this.telefonoDueño.Size = new System.Drawing.Size(190, 32);
+            this.telefonoDueño.TabIndex = 14;
+            this.telefonoDueño.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // raza
             // 
             this.raza.BackColor = System.Drawing.Color.Lime;
@@ -534,7 +559,7 @@
             // nombreAmo
             // 
             this.nombreAmo.BackColor = System.Drawing.Color.Lime;
-            this.nombreAmo.Location = new System.Drawing.Point(767, 175);
+            this.nombreAmo.Location = new System.Drawing.Point(767, 168);
             this.nombreAmo.Name = "nombreAmo";
             this.nombreAmo.Size = new System.Drawing.Size(190, 37);
             this.nombreAmo.TabIndex = 10;
@@ -579,7 +604,7 @@
             // botonDueño
             // 
             this.botonDueño.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonDueño.Location = new System.Drawing.Point(472, 386);
+            this.botonDueño.Location = new System.Drawing.Point(472, 409);
             this.botonDueño.Name = "botonDueño";
             this.botonDueño.Size = new System.Drawing.Size(238, 67);
             this.botonDueño.TabIndex = 5;
@@ -590,7 +615,7 @@
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(56, 408);
+            this.label16.Location = new System.Drawing.Point(56, 431);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(200, 25);
             this.label16.TabIndex = 4;
@@ -598,14 +623,14 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(263, 410);
+            this.textBox7.Location = new System.Drawing.Point(263, 433);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(167, 23);
             this.textBox7.TabIndex = 3;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(263, 124);
+            this.textBox6.Location = new System.Drawing.Point(263, 146);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(167, 23);
             this.textBox6.TabIndex = 2;
@@ -613,7 +638,7 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(52, 123);
+            this.label10.Location = new System.Drawing.Point(52, 145);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(204, 25);
             this.label10.TabIndex = 1;
@@ -621,13 +646,14 @@
             // 
             // botonMascota
             // 
+            this.botonMascota.BackColor = System.Drawing.Color.Transparent;
             this.botonMascota.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonMascota.Location = new System.Drawing.Point(472, 96);
+            this.botonMascota.Location = new System.Drawing.Point(472, 118);
             this.botonMascota.Name = "botonMascota";
             this.botonMascota.Size = new System.Drawing.Size(238, 68);
             this.botonMascota.TabIndex = 0;
             this.botonMascota.Text = "Buscar mascota";
-            this.botonMascota.UseVisualStyleBackColor = true;
+            this.botonMascota.UseVisualStyleBackColor = false;
             this.botonMascota.Click += new System.EventHandler(this.button2_Click);
             // 
             // imageList1
@@ -638,31 +664,6 @@
             this.imageList1.Images.SetKeyName(1, "icons8_veterinarian.ico");
             this.imageList1.Images.SetKeyName(2, "icons8_search_1.ico");
             this.imageList1.Images.SetKeyName(3, "icons8_calendar_1.ico");
-            // 
-            // telefonoDueño
-            // 
-            this.telefonoDueño.BackColor = System.Drawing.Color.Lime;
-            this.telefonoDueño.Location = new System.Drawing.Point(767, 454);
-            this.telefonoDueño.Name = "telefonoDueño";
-            this.telefonoDueño.Size = new System.Drawing.Size(190, 32);
-            this.telefonoDueño.TabIndex = 14;
-            this.telefonoDueño.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBoxVacunas
-            // 
-            this.textBoxVacunas.Location = new System.Drawing.Point(548, 122);
-            this.textBoxVacunas.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxVacunas.Name = "textBoxVacunas";
-            this.textBoxVacunas.Size = new System.Drawing.Size(193, 27);
-            this.textBoxVacunas.TabIndex = 19;
-            // 
-            // textBoxEsterilizado
-            // 
-            this.textBoxEsterilizado.Location = new System.Drawing.Point(548, 194);
-            this.textBoxEsterilizado.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxEsterilizado.Name = "textBoxEsterilizado";
-            this.textBoxEsterilizado.Size = new System.Drawing.Size(193, 27);
-            this.textBoxEsterilizado.TabIndex = 20;
             // 
             // Form1
             // 

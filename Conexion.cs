@@ -167,7 +167,7 @@ namespace EjemploTabs_2021
         }
 
 
-        public Boolean ingresoMascota(String _Cod_Ingreso, String _Descripcion, String _Enfermedad,  String _Coste_Ingreso, String _Fecha, String _Chip, String _Vacunas, String _Esterilizado  )
+        public Boolean ingresoMascota(String _Cod_Ingreso, String _Fecha, String _Descripcion, String _Enfermedad, String _Vacunas, String _Esterilizado, String _Coste_Ingreso, String _Chip  )
         {
             try
             {
@@ -202,9 +202,6 @@ namespace EjemploTabs_2021
                 throw e;
             }
         }
-
-
-
 
 
 
@@ -247,6 +244,8 @@ namespace EjemploTabs_2021
                 throw e;
             }
         }
+
+
     }
 
 }

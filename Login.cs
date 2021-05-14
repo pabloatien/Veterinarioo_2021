@@ -29,7 +29,6 @@ namespace EjemploTabs_2021
                this.Hide();
                tusAnimales Ventana = new tusAnimales();
                Ventana.Show();
-
             }
             else {  //o la contraseña o el usuario son incorrectos
                MessageBox.Show("el usuario o la contraseña son incorrectos");

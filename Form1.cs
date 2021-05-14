@@ -49,7 +49,7 @@ namespace EjemploTabs_2021
             
 
 
-            Boolean resultado = miConexion.ingresoMascota(textBoxCod_Ingreso.Text, textBoxDescripcion.Text, textBoxEnfermedad.Text, textBoxCoste.Text, Fecha, textBoxChip.Text, textBoxVacunas.Text, textBoxEsterilizado.Text);
+            Boolean resultado = miConexion.ingresoMascota(textBoxCod_Ingreso.Text, Fecha, textBoxDescripcion.Text, textBoxEnfermedad.Text, textBoxVacunas.Text, textBoxEsterilizado.Text, textBoxCoste.Text, textBoxChip.Text);
             if (resultado)
             {
                 MessageBox.Show("INSERTADO CORRECTAMENTE");
